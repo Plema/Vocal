@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <link rel="icon" href="img/retro-microphone.png" type="image/x-icon" />
+    <link rel="stylesheet" href="css/style.min.css" data-inprogress="" />
+    <link rel="stylesheet" href="css/home.min.css" data-inprogress="" />
+    <title>VOCALS</title>
+    <style>
+      .banner-wrapper {
+        background-image: url(img/banner-bg__mob.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      @media (min-width: 480px) {
+        .banner-wrapper {
+          background-image: url(img/banner-bg__decktop.png);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <include src="assets/templates/header.html"></include>
+      <main class="main">
+        <section class="banner-wrapper">
+          <div class="container">
+            <div class="title-wrapper">
+              <h1 class="main-title">
+                Лучшие <br />
+                видео курсы <br />
+                <span class="main-title__span">по вокалу</span>
+              </h1>
+              <p class="main-subtitle">с обратной связью от педагога по вокалу со стажем более 13 лет.</p>
+              <a href="javascript:void(0)" class="button">Подробнее</a>
+            </div>
+            <div class="content-wrapper">
+              <div class="video-wrapper">
+                <img src="img/video__img.png" alt="" />
+              </div>
+              <div class="description-wrapper">
+                <p class="description-text"><span class="description-text__span">Анна Комлевская</span>, автор курсов и уникальной программы развития голоса.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <include src="assets/templates/footer.html"></include>
+    </div>
+
+    <!-- script -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/jquery.matchHeight.min.js"></script>
+    <script src="js/jquery.mask.min.js"></script>
+    <script src="js/accordion.min.js"></script>
+
+    <script src="js/header-burger.min.js"></script>
+  </body>
+</html>
