@@ -1,7 +1,8 @@
 .banner-wrapper {
   position: relative;
-  padding: 50px 0 40px;
+  padding: 10px 0 40px;
   height: 100vh;
+  // max-height: 850px;
   .container {
     display: flex;
     flex-direction: column;
@@ -9,7 +10,7 @@
     height: 100%;
   }
   .title-wrapper {
-    margin-bottom: 25px;
+    padding-top: 40px;
     .main-title {
       font-family: 'Proxima Nova Th';
       font-style: normal;
@@ -20,6 +21,7 @@
       color: var(--white-color);
       margin-bottom: 4px;
       &__span {
+        line-height: 40px;
         color: #ffcf23;
         font-style: normal;
         font-weight: 800;
@@ -38,6 +40,7 @@
     }
   }
   .content-wrapper {
+    margin-top: 25px;
     position: relative;
     padding-bottom: 82px;
     margin-left: auto;
@@ -53,11 +56,32 @@
       backdrop-filter: blur(45px);
       border-radius: 10px;
       max-width: 400px;
+      max-height: 230px;
+      position: relative;
       img {
         border-radius: 10px;
         width: 100%;
         height: auto;
         object-fit: cover;
+      }
+      .play-wrapper {
+        position: absolute;
+        width: 37px;
+        height: 27px;
+        object-fit: cover;
+        transform: translate(-50%, -50%);
+        left: 50%;
+        top: 50%;
+        a {
+          display: flex;
+          width: 100%;
+          height: 100%;
+        }
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
       }
     }
     .description-wrapper {
@@ -88,6 +112,116 @@
           color: var(--white-color);
         }
       }
+    }
+  }
+  @media (min-height: 650px) {
+    .container {
+      justify-content: space-around;
+    }
+  }
+  @media (min-width: 768px) {
+    .container {
+      justify-content: space-between;
+    }
+    .title-wrapper {
+      margin-top: 100px;
+      width: 50%;
+      .main-title {
+        font-size: 48px;
+        margin-bottom: 20px;
+      }
+      .main-subtitle {
+        font-size: 24px;
+        margin-bottom: 40px;
+      }
+    }
+    .content-wrapper {
+      margin-top: 0;
+      width: 375px;
+      padding-bottom: 24px;
+      .video-wrapper {
+        .play-wrapper {
+          width: 50px;
+          height: 35px;
+        }
+      }
+      .description-wrapper {
+        bottom: -10%;
+        left: 45%;
+        width: 260px;
+        min-height: 84px;
+        .description-text {
+          line-height: 19px;
+        }
+      }
+    }
+  }
+  @media (min-width: 1024px) {
+    padding: 50px 0 104px;
+    .container {
+      flex-direction: row;
+    }
+    .inner-wrapper {
+      display: flex;
+      align-items: center;
+      width: 60%;
+      .title-wrapper {
+        width: 80%;
+        padding-top: 0;
+        .main-title {
+          font-size: 64px;
+          line-height: 69px;
+          &__span {
+            font-size: 64px;
+            line-height: 69px;
+          }
+        }
+        .main-subtitle {
+          max-width: 410px;
+        }
+      }
+    }
+    .content-wrapper {
+      display: flex;
+      align-items: flex-end;
+      padding-bottom: 0;
+      .description-wrapper {
+        bottom: -8%;
+        left: 48%;
+      }
+    }
+  }
+  @media (min-width: 1280px) {
+    .inner-wrapper {
+      margin-top: 50px;
+    }
+  }
+  @media (min-width: 1400px) {
+    .inner-wrapper {
+      .title-wrapper {
+        margin-top: 0px;
+        margin-left: -25px;
+      }
+    }
+    .content-wrapper {
+      margin-right: -100px;
+    }
+  }
+  @media (min-height: 900px) {
+    .inner-wrapper {
+      .title-wrapper {
+        margin-left: -60px;
+      }
+    }
+  }
+  @media (min-height: 1000px) {
+    .inner-wrapper {
+      .title-wrapper {
+        margin-left: -120px;
+      }
+    }
+    .content-wrapper {
+      margin-right: -140px;
     }
   }
 }
