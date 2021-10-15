@@ -1,0 +1,55 @@
+.courses {
+  .description-courses {
+    padding-top: 25px;
+    .img-wrapper {
+      width: 100%;
+      height: auto;
+      img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+      }
+    }
+    .description-text {
+      padding: 10px 0;
+      .description-title {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 29px;
+        text-align: center;
+        text-transform: uppercase;
+        margin-bottom: 15px;
+      }
+      .description-list {
+        &__item {
+          background: #ffffff;
+          box-shadow: 0px 4px 17px #e7e9f8;
+          border-radius: 20px 0px;
+          padding: 10px 20px 10px 46px;
+          &:not(:last-child) {
+            margin-bottom: 10px;
+          }
+          .item-text {
+            position: relative;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 17px;
+            color: #25232d;
+            &::before {
+              content: '';
+              position: absolute;
+              width: 16px;
+              height: 16px;
+              background-image: url(../img/icon-checked__orange.png);
+              background-repeat: no-repeat;
+              background-size: cover;
+              left: -20px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
