@@ -11,6 +11,21 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
+
+  &::-webkit-scrollbar {
+    width: 10px;
+    height: 20%;
+    border-radius: 50px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: #8a63e4;
+    height: 20%;
+    border-radius: 50px;
+  }
+  &::-webkit-scrollbar-track {
+    background-color: #e9e5e5;
+    border-radius: 50px;
+  }
 }
 .lock {
   overflow: hidden;
