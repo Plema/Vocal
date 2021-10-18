@@ -1,6 +1,6 @@
 .courses {
   .description-courses {
-    padding-top: 25px;
+    padding: 25px 0;
     .img-wrapper {
       width: 100%;
       height: auto;
@@ -22,11 +22,13 @@
         margin-bottom: 15px;
       }
       .description-list {
+        margin-bottom: -10px;
         &__item {
           background: #ffffff;
           box-shadow: 0px 4px 17px #e7e9f8;
           border-radius: 20px 0px;
           padding: 10px 20px 10px 46px;
+          margin-bottom: 10px;
           &:not(:last-child) {
             margin-bottom: 10px;
           }
@@ -46,6 +48,275 @@
               background-repeat: no-repeat;
               background-size: cover;
               left: -20px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .courses-wrapper {
+    padding: 15px 0;
+    .courses-inner {
+      .courses-img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        z-index: 4;
+      }
+      .courses-description {
+        background: linear-gradient(76.53deg, #9e32d7 1.45%, #e25aa8 90.18%, #8a59fd 111.56%);
+        margin-top: -45px;
+      }
+      .content {
+        padding: 13px 0 31px;
+        position: relative;
+        z-index: 3;
+        &::after {
+          content: '';
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          background: rgba(255, 255, 255, 0.21);
+          backdrop-filter: blur(45px);
+          border-radius: 20px 0px;
+          transform: translate(-50%, -50%);
+          top: 0px;
+          left: 50%;
+          z-index: -1;
+        }
+        &-title {
+          font-style: normal;
+          font-weight: 900;
+          font-size: 20px;
+          line-height: 26px;
+          text-align: center;
+          text-transform: uppercase;
+          color: var(--white-color);
+        }
+        &-subtitle {
+          font-style: normal;
+          font-weight: 900;
+          font-size: 17px;
+          line-height: 22px;
+          text-align: center;
+          text-transform: uppercase;
+          color: var(--white-color);
+          position: relative;
+          margin: 0 auto 28px;
+          max-width: 320px;
+
+          &::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 1px;
+            background-image: url(../img/line-bg.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+            transform: translate(-50%, 0);
+            left: 50%;
+            bottom: -12px;
+          }
+        }
+        .list-title {
+          font-style: normal;
+          font-weight: bold;
+          font-size: 18px;
+          line-height: 22px;
+          color: #ffffff;
+          margin: 0 auto 5px;
+          padding: 0 20px;
+          max-width: 320px;
+        }
+        .list {
+          margin: 0 auto 18px;
+          padding: 0 20px;
+          max-width: 320px;
+
+          &-ltem {
+            padding-left: 30px;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 15px;
+            color: #ffffff;
+            position: relative;
+            &:not(:last-child) {
+              margin-bottom: 10px;
+            }
+            &::before {
+              content: '';
+              position: absolute;
+              width: 16px;
+              height: 16px;
+              background-image: url(../img/icon-checked__fiolet.png);
+              background-repeat: no-repeat;
+              background-size: cover;
+              left: 0px;
+            }
+          }
+        }
+        .button__courses {
+          margin: 25px auto 0;
+          display: flex;
+          width: 180px;
+        }
+      }
+    }
+    .courses-newbie {
+      margin-bottom: 30px;
+      .content {
+        position: relative;
+        &::after {
+          top: 165px;
+        }
+      }
+    }
+    .courses-vocalists-foundation {
+      margin-bottom: 30px;
+      .content {
+        position: relative;
+        &::after {
+          top: 245px;
+        }
+      }
+    }
+    .courses-successful-vocalist {
+      .content {
+        position: relative;
+        &::after {
+          top: 235px;
+        }
+      }
+    }
+  }
+  @media (min-width: 768px) {
+    .description-courses {
+      display: flex;
+      justify-content: space-between;
+      .img-wrapper {
+        width: 24%;
+      }
+      .description-text {
+        width: 74%;
+        .description-list {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          align-items: stretch;
+          &__item {
+            width: 48%;
+          }
+        }
+      }
+    }
+    .courses-wrapper {
+      .courses-inner {
+        .content {
+          &-subtitle {
+            max-width: 450px;
+          }
+          .list-wrapper {
+            display: flex;
+            justify-content: center;
+          }
+        }
+      }
+      .courses-newbie {
+        .content {
+          position: relative;
+          &::after {
+            top: 105px;
+          }
+        }
+      }
+      .courses-vocalists-foundation {
+        .content {
+          position: relative;
+          &::after {
+            top: 135px;
+          }
+        }
+      }
+      .courses-successful-vocalist {
+        .content {
+          position: relative;
+          &::after {
+            top: 150px;
+          }
+        }
+      }
+    }
+  }
+  @media (min-width: 1024px) {
+    margin-top: 40px;
+    .description-courses {
+      padding: 25px 0 25px;
+      width: 100%;
+      .description-text {
+        padding: 0;
+        .description-title {
+          text-align: left;
+          font-size: 36px;
+          line-height: 44px;
+        }
+        .description-list {
+          &__item {
+            max-width: 340px;
+            .item-text {
+              font-size: 19px;
+              line-height: 17px;
+            }
+          }
+        }
+      }
+    }
+    .courses-wrapper {
+      width: 100%;
+      max-width: 1240px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-around;
+      .courses-inner {
+        width: 400px;
+        max-width: 30%;
+        .courses-description {
+          .container {
+            width: 400px;
+            padding: 0;
+          }
+          background: transparent;
+        }
+        .content {
+          .list-wrapper {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+  @media (min-width: 1280px) {
+    .description-courses {
+      padding: 125px 0 25px;
+      .img-wrapper {
+        width: 40%;
+        position: relative;
+        z-index: -1;
+      }
+      .description-text {
+        width: 57%;
+        .description-list {
+          margin-bottom: -23px;
+          &__item {
+            max-width: 340px;
+            margin-bottom: 23px;
+            &:not(:last-child) {
+              margin-bottom: 23px;
+            }
+            .item-text {
+              font-size: 19px;
+              line-height: 17px;
             }
           }
         }
