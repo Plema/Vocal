@@ -370,6 +370,9 @@
             top: 315px;
             height: 103%;
           }
+          &-title {
+            margin-top: -5px;
+          }
         }
       }
       .courses-successful-vocalist {
@@ -449,7 +452,7 @@
         .content {
           position: relative;
           &::after {
-            top: 250px;
+            top: 246px;
           }
         }
       }
