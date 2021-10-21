@@ -1,6 +1,7 @@
 @import 'libs/normalize';
 @import 'libs/fonts';
 @import 'libs/header';
+@import 'libs/footer';
 
 :root {
   --white-color: #fff;
@@ -26,6 +27,20 @@ body {
     background-color: #e9e5e5;
     border-radius: 50px;
   }
+  &::-moz-osx-scrollbar {
+    width: 10px;
+    height: 20%;
+    border-radius: 50px;
+  }
+  &::-moz-osx-scrollbar-thumb {
+    background-color: #8a63e4;
+    height: 20%;
+    border-radius: 50px;
+  }
+  &::-moz-osx-scrollbar-track {
+    background-color: #e9e5e5;
+    border-radius: 50px;
+  }
 }
 .lock {
   overflow: hidden;
@@ -45,7 +60,6 @@ html {
   box-sizing: border-box;
   position: relative;
   height: 100%;
-  scroll-behavior: smooth;
 }
 
 * {
