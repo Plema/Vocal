@@ -1,5 +1,4 @@
 .course-author {
-  margin-bottom: 50px;
   .about-author {
     padding: 36px 0;
     position: relative;
@@ -390,8 +389,8 @@
         &::after {
           width: 430px;
           height: 461px;
-          filter: blur(70px);
-          bottom: -70px;
+          filter: blur(76px);
+          bottom: -76px;
         }
         &::before {
           content: '';
@@ -413,6 +412,19 @@
       .text-wrapper {
         width: 50%;
         max-width: 705px;
+        position: relative;
+        &::before {
+          content: '';
+          position: absolute;
+          width: 18px;
+          height: 21px;
+          background-image: url(../img/music-note__2.png);
+          background-repeat: no-repeat;
+          background-size: contain;
+          transform: translate(0, -50%);
+          top: 65%;
+          left: -200px;
+        }
         .author-title {
           font-size: 36px;
           line-height: 44px;
@@ -560,6 +572,20 @@
     }
     .buy-courses {
       padding: 50px 0;
+      position: relative;
+      &::before {
+        content: '';
+        position: absolute;
+        width: 78px;
+        height: 152px;
+        background-image: url(../img/music-key.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        object-fit: cover;
+        bottom: -38px;
+        left: 120px;
+      }
       .buy-title {
         font-size: 36px;
         line-height: 44px;
