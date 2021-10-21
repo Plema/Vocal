@@ -5,6 +5,13 @@ document.documentElement.style.setProperty('--vh', `${vh}px`)
 $(document).ready(function () {
   $('#faq-accordion').accordionjs({
     closeAble: true,
-    slideSpeed: 500,
+    slideSpeed: 400,
+  })
+
+  $('.anchor').on('click', function (event) {
+    event.preventDefault()
+    var id = $(this).attr('href'),
+      top = $(id).offset().top
+    $('body,html').animate({ scrollTop: top }, 700)
   })
 })
