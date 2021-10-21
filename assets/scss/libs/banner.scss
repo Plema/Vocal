@@ -207,21 +207,4 @@
       margin-right: -80px;
     }
   }
-  @media (min-height: 900px) {
-    .inner-wrapper {
-      .title-wrapper {
-        margin-left: -60px;
-      }
-    }
-  }
-  @media (min-height: 1000px) {
-    .inner-wrapper {
-      .title-wrapper {
-        margin-left: -120px;
-      }
-    }
-    .content-wrapper {
-      margin-right: -140px;
-    }
-  }
 }
