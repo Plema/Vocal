@@ -105,6 +105,7 @@
           box-shadow: 0px 4px 17px #e7e9f8;
           padding: 12px 12px 20px 16px;
           display: flex;
+          background-color: #fff;
           .review-avatar {
             width: 44px;
             height: 42px;
@@ -352,6 +353,310 @@
         width: 180px;
         height: 50px;
       }
+    }
+  }
+  @media (min-width: 768px) {
+    .about-author {
+      .description-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        &__item {
+          width: 45%;
+        }
+      }
+    }
+    .buy-courses {
+      padding: 41px 0 170px;
+      .buy-subtitle {
+        width: 425px;
+      }
+      .button-wrapper {
+        &::after {
+          top: 35px;
+        }
+      }
+    }
+  }
+  @media (min-width: 1024px) {
+    .about-author {
+      padding: 81px 20px 18px;
+      display: flex;
+      width: 100%;
+      max-width: 1280px;
+      margin: 0 auto;
+      .photo-wrapper {
+        width: 50%;
+        &::after {
+          width: 430px;
+          height: 461px;
+          filter: blur(70px);
+          bottom: -70px;
+        }
+        &::before {
+          content: '';
+          position: absolute;
+          width: 34px;
+          height: 38px;
+          background-image: url(../img/misic-note.png);
+          background-repeat: no-repeat;
+          background-size: contain;
+          z-index: 3;
+          left: -50px;
+          bottom: 200px;
+        }
+        img {
+          width: 100%;
+          max-width: 445px;
+        }
+      }
+      .text-wrapper {
+        width: 50%;
+        max-width: 705px;
+        .author-title {
+          font-size: 36px;
+          line-height: 44px;
+          text-align: left;
+          margin-bottom: 35px;
+        }
+        .author-description {
+          font-size: 18px;
+          line-height: 24px;
+          margin-bottom: 14px;
+          text-align: left;
+        }
+        .quote {
+          font-size: 18px;
+          line-height: 24px;
+          margin-bottom: 30px;
+          text-align: left;
+        }
+        .description-list {
+          flex-wrap: nowrap;
+          flex-direction: column;
+          &__item {
+            width: 100%;
+            font-size: 18px;
+            line-height: 28px;
+          }
+        }
+      }
+    }
+    .reviews-wrapper {
+      padding: 80px 0 10px;
+      position: relative;
+      .reviews {
+        &-title {
+          font-size: 36px;
+          line-height: 44px;
+          position: relative;
+          z-index: 2;
+        }
+        .slider-reviews {
+          position: relative;
+          z-index: 2;
+          .slider-item {
+            position: relative;
+            z-index: 2;
+          }
+          .slick-dots {
+            button {
+              width: 18px;
+              height: 18px;
+            }
+            li {
+              &.slick-active button {
+                width: 20px;
+                height: 20px;
+                position: relative;
+                &::after {
+                  content: '';
+                  position: absolute;
+                  width: 10px;
+                  height: 10px;
+                  background-color: var(--white-color);
+                  border-radius: 50%;
+                  transform: translate(-50%, -50%);
+                  left: 50%;
+                  top: 50%;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .courses-result {
+      position: relative;
+      padding: 30px 0 65px;
+      &::before {
+        content: '';
+        position: absolute;
+        width: 444px;
+        height: 435px;
+        background: linear-gradient(95.78deg, #aee0ff 16.73%, #fbe2fb 57.82%, #dad6ff 100.66%);
+        filter: blur(85px);
+        transform: rotate(-122.58deg);
+        left: -15%;
+        z-index: -1;
+      }
+      &::after {
+        content: '';
+        position: absolute;
+        width: 775px;
+        height: 758px;
+        background: linear-gradient(95.78deg, #aee0ff 16.73%, #fbe2fb 57.82%, #dad6ff 100.66%);
+        filter: blur(85px);
+        transform: rotate(-122.58deg);
+        top: 0;
+        right: -32%;
+        z-index: -1;
+      }
+      .result-title {
+        font-size: 36px;
+        line-height: 44px;
+        margin-bottom: 14px;
+      }
+      .result-subtitle {
+        font-size: 24px;
+        line-height: 29px;
+        width: 545px;
+        margin: 0 auto 49px;
+        &__span {
+          font-size: 24px;
+          line-height: 29px;
+        }
+      }
+      .result-list {
+        position: relative;
+        z-index: 1;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-bottom: -17px;
+        &__item {
+          position: relative;
+          z-index: 1;
+          background: #fff;
+          width: 49%;
+          padding: 28px;
+          max-width: 610px;
+          margin-bottom: 17px;
+          align-items: center;
+          .item-img {
+            width: 58px;
+            height: 58px;
+          }
+          .result-text {
+            font-size: 18px;
+            line-height: 22px;
+            &__span {
+              font-size: 18px;
+              line-height: 22px;
+            }
+          }
+        }
+      }
+    }
+    .buy-courses {
+      padding: 50px 0;
+      .buy-title {
+        font-size: 36px;
+        line-height: 44px;
+        &__span {
+          font-size: 36px;
+          line-height: 44px;
+        }
+      }
+      .buy-subtitle {
+        font-size: 30px;
+        line-height: 37px;
+        width: 600px;
+        &__span {
+          font-size: 30px;
+          line-height: 37px;
+        }
+      }
+      .button-wrapper {
+        &::before {
+          width: 144px;
+          height: 144px;
+          top: -110px;
+          left: 60%;
+        }
+        &::after {
+          width: 300px;
+          height: 210px;
+          top: -80px;
+          right: -20px;
+        }
+      }
+    }
+  }
+  @media (min-width: 1280px) {
+    .about-author {
+      position: relative;
+      &::before {
+        content: '';
+        position: absolute;
+        z-index: 1;
+        width: 775px;
+        height: 759px;
+        background: linear-gradient(95.78deg, #aee0ff 16.73%, #fbe2fb 57.82%, #dad6ff 100.66%);
+        filter: blur(85px);
+        transform: rotate(-50.78deg);
+        left: -50%;
+        top: 25%;
+      }
+      &::after {
+        content: '';
+        position: absolute;
+        z-index: 1;
+        width: 320px;
+        height: 640px;
+        background: linear-gradient(95.78deg, #aee0ff 16.73%, #fbe2fb 57.82%, #dad6ff 100.66%);
+        filter: blur(85px);
+        transform: rotate(-122.58deg);
+        right: -40%;
+        top: 15%;
+      }
+      .photo-wrapper {
+        width: 42%;
+      }
+      .text-wrapper {
+        width: 57%;
+      }
+    }
+    .reviews-wrapper {
+      padding: 80px 0 30px;
+    }
+    .buy-courses {
+      .button-wrapper {
+        &::before {
+          width: 184px;
+          height: 184px;
+          top: -110px;
+          left: 54%;
+        }
+        &::after {
+          width: 405px;
+          height: 338px;
+          top: -160px;
+          right: -50px;
+        }
+      }
+    }
+  }
+  @media (min-width: 1600px) {
+    .courses-result {
+      &::after {
+        z-index: 1;
+      }
+    }
+  }
+  @media (min-width: 1900px) {
+    .reviews-wrapper {
+      padding: 70px 0 60px;
     }
   }
 }
