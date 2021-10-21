@@ -1,0 +1,106 @@
+.faq {
+  padding: 57px 0 35px;
+  .title-wrapper {
+    .faq-title {
+      font-family: 'Proxima Nova Th';
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 29px;
+      text-align: center;
+      text-transform: uppercase;
+    }
+  }
+  .faq-inner {
+    position: relative;
+    &::before {
+      content: '';
+      position: absolute;
+      width: 388px;
+      height: 380px;
+      background: linear-gradient(95.78deg, #aee0ff 16.73%, #fbe2fb 57.82%, #dad6ff 100.66%);
+      filter: blur(85px);
+      transform: rotate(-50.78deg);
+      z-index: 2;
+      left: -50%;
+      top: 160px;
+    }
+    .img-wrapper {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 10px;
+      position: relative;
+      z-index: 1;
+    }
+    .faq-content {
+      position: relative;
+      z-index: 3;
+      .accordionjs {
+        .acc_section {
+          cursor: pointer;
+          background: #ffffff;
+          box-shadow: 0px 4px 17px #e7e9f8;
+          border-radius: 20px 0px;
+          padding: 17px 40px 17px 17px;
+
+          &:not(:last-child) {
+            margin-bottom: 13px;
+          }
+          .acc_head {
+            position: relative;
+            &::after {
+              content: '';
+              position: absolute;
+              width: 16.6px;
+              height: 16.6px;
+              background-image: url(../img/accordion-arrow.png);
+              background-size: contain;
+              background-position: center;
+              background-repeat: no-repeat;
+              right: -28px;
+              top: 1px;
+              transition: all 0.7s;
+            }
+            h6 {
+              font-weight: 600;
+              font-size: 16px;
+              line-height: 17px;
+            }
+          }
+          .acc_content {
+            p {
+              margin-top: 15px;
+              font-style: normal;
+              font-weight: normal;
+              font-size: 16px;
+              line-height: 19px;
+            }
+          }
+        }
+        .acc_active {
+          .acc_head {
+            &::after {
+              content: '';
+              position: absolute;
+              width: 16.6px;
+              height: 16.6px;
+              background-image: url(../img/accordion-arrow.png);
+              background-size: contain;
+              background-position: center;
+              background-repeat: no-repeat;
+              right: -28px;
+              top: 1px;
+              transform: rotate(90deg);
+              transition: all 0.7s;
+            }
+          }
+        }
+      }
+    }
+  }
+  @media (min-width: 768px) {
+    .title-wrapper {
+      width: 70%;
+      margin: 0 auto;
+    }
+  }
+}
