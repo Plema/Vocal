@@ -29,9 +29,9 @@
           transition: all 0.7s;
         }
         &:hover {
-          border-color: #ffcf23;
+          background-color: var(--white-color);
           .icon-social {
-            fill: #ffcf23;
+            fill: #8a63e4;
           }
         }
       }
@@ -52,8 +52,27 @@
           line-height: 22px;
           color: var(--white-color);
           transition: all 0.7s;
-          &:hover {
-            color: #ffcf23;
+          position: relative;
+          &::before,
+          &::after {
+            content: '';
+            position: absolute;
+            width: 0px;
+            height: 1px;
+            background-color: var(--white-color);
+            transform: translate(-50%, -50%);
+            top: 50%;
+            transition: all 0.7s;
+          }
+          &.active {
+            &::before {
+              width: 20px;
+              left: -16px;
+            }
+            &::after {
+              width: 20px;
+              right: -34px;
+            }
           }
         }
       }
@@ -84,10 +103,10 @@
         z-index: 2;
       }
       &:hover {
-        color: #ffcf23;
+        color: #8a63e4;
         .icon-mail {
-          fill: #ffcf23;
-          border-color: #ffcf23;
+          fill: #8a63e4;
+          background-color: #fff;
         }
       }
     }
@@ -117,9 +136,9 @@
             transition: all 0.7s;
           }
           &:hover {
-            border-color: #ffcf23;
+            background-color: var(--white-color);
             .icon-social {
-              fill: #ffcf23;
+              fill: #8a63e4;
             }
           }
         }
@@ -128,6 +147,18 @@
   }
   @media (min-width: 1024px) {
     padding: 58px 0 48px;
+    position: relative;
+    &::after {
+      content: '';
+      position: absolute;
+      width: 72px;
+      height: 72px;
+      background: linear-gradient(95.78deg, #883ffd 16.73%, #13ecf6 100.66%);
+      filter: blur(14px);
+      transform: matrix(0.63, -0.77, -0.77, -0.63, 0, 0);
+      top: -40px;
+      right: 50px;
+    }
     .container {
       justify-content: space-between;
       align-items: center;
@@ -174,6 +205,11 @@
           margin: 0 35px;
         }
       }
+    }
+  }
+  @media (min-width: 1440px) {
+    &::after {
+      right: 100px;
     }
   }
 }
