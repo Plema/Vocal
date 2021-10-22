@@ -14,4 +14,8 @@ $(document).ready(function () {
       top = $(id).offset().top
     $('body,html').animate({ scrollTop: top }, 700)
   })
+  $('.nav-footer-list .nav-footer__link').hover(function () {
+    $('.nav-footer__link').removeClass('active')
+    $(this).toggleClass('active')
+  })
 })
