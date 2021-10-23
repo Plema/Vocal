@@ -30,6 +30,8 @@
           margin-bottom: 10px;
           display: flex;
           align-items: center;
+          position: relative;
+          z-index: 2;
           &:not(:last-child) {
             margin-bottom: 10px;
           }
@@ -48,7 +50,7 @@
               background-image: url(../img/icon-checked__orange.png);
               background-repeat: no-repeat;
               background-size: cover;
-              left: -20px;
+              left: -28px;
             }
           }
         }
@@ -63,6 +65,19 @@
         align-items: center;
         position: relative;
         z-index: 4;
+        width: 90%;
+        max-width: 240px;
+        margin: 0 auto 30px;
+        &::after {
+          content: '';
+          position: absolute;
+          z-index: 5;
+          width: 135px;
+          height: 70px;
+          background: linear-gradient(214.26deg, #fefdff 26.08%, #da74c4 66.01%);
+          filter: blur(25px);
+          bottom: 15px;
+        }
       }
       .courses-description {
         background: linear-gradient(76.53deg, #9e32d7 1.45%, #e25aa8 90.18%, #8a59fd 111.56%);
@@ -93,6 +108,8 @@
           text-align: center;
           text-transform: uppercase;
           color: var(--white-color);
+          position: relative;
+          z-index: 5;
         }
         &-subtitle {
           font-style: normal;
@@ -169,7 +186,7 @@
       .content {
         position: relative;
         &::after {
-          top: 165px;
+          top: 155px;
         }
       }
     }
@@ -178,7 +195,7 @@
       .content {
         position: relative;
         &::after {
-          top: 245px;
+          top: 230px;
         }
       }
     }
@@ -186,7 +203,7 @@
       .content {
         position: relative;
         &::after {
-          top: 235px;
+          top: 225px;
         }
       }
     }
@@ -263,6 +280,7 @@
       background-image: url(../img/courses-bg__before.png);
       background-repeat: no-repeat;
       background-size: contain;
+      z-index: 1;
     }
     &::after {
       content: '';
@@ -312,17 +330,23 @@
         width: 30%;
         max-width: 310px;
         position: relative;
+        z-index: 2;
         margin-top: -200px;
         .courses-img {
-          width: 310px;
-          max-width: 310px;
-          margin-bottom: -50px;
-          img {
-            position: relative;
-            z-index: 4;
+          width: 260px;
+          max-width: 260px;
+          height: 260px;
+          // margin-bottom: -100px;
+          &::after {
+            width: 161px;
+            height: 83px;
+            bottom: 15px;
+            filter: blur(35px);
           }
         }
         .courses-description {
+          position: relative;
+          z-index: 2;
           .container {
             max-width: 400px;
             padding: 0;
@@ -333,6 +357,8 @@
           &-title {
             font-size: 24px;
             line-height: 26px;
+            position: relative;
+            z-index: 10;
           }
           &-subtitle {
             font-size: 20px;
@@ -341,7 +367,7 @@
           }
           .list {
             &-ltem {
-              line-height: 27px;
+              line-height: 24px;
               &::before {
                 top: 6px;
               }
@@ -357,7 +383,7 @@
         .content {
           position: relative;
           &::after {
-            top: 210px;
+            top: 194px;
             height: 103%;
           }
         }
@@ -367,11 +393,10 @@
         .content {
           position: relative;
           &::after {
-            top: 315px;
+            top: 300px;
             height: 103%;
           }
           &-title {
-            margin-top: -5px;
           }
         }
       }
@@ -379,7 +404,7 @@
         .content {
           position: relative;
           &::after {
-            top: 320px;
+            top: 300px;
             height: 103%;
           }
         }
@@ -425,11 +450,18 @@
       }
     }
     .courses-wrapper {
+      margin-top: 350px;
       .courses-inner {
         max-width: 400px;
+        margin-top: -230px;
         .courses-img {
-          width: 400px;
-          max-width: 400px;
+          width: 340px;
+          max-width: 340px;
+          margin-right: 0;
+          margin-left: auto;
+          img {
+            height: 100%;
+          }
         }
         .content {
           .list-title,
@@ -443,7 +475,8 @@
         .content {
           position: relative;
           &::after {
-            top: 170px;
+            top: 152px;
+            height: 107%;
           }
         }
       }
@@ -452,7 +485,8 @@
         .content {
           position: relative;
           &::after {
-            top: 246px;
+            top: 230px;
+            height: 105%;
           }
         }
       }
@@ -460,7 +494,8 @@
         .content {
           position: relative;
           &::after {
-            top: 240px;
+            top: 221px;
+            height: 106%;
           }
         }
       }
