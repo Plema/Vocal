@@ -107,7 +107,8 @@ ol li {
   margin: 0;
 }
 .button {
-  font-family: 'Proxima Nova Rg';
+  font-family: 'Proxima Nova Lt';
+  font-style: normal;
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -116,10 +117,10 @@ ol li {
   max-width: 300px;
   min-height: 50px;
   padding: 14px 35px;
-  background: linear-gradient(180.4deg, #ffd260 0.34%, #f29642 76.43%, #f5723a 99.05%);
+  background: linear-gradient(180.4deg, #f9a25e 0.34%, #f5754d 76.43%, #f55c2c 99.05%);
   border-radius: 50px;
   transform: rotate(-0.13deg);
-  font-weight: 700;
+  font-weight: 600;
   font-size: 18px;
   line-height: 22px;
   color: var(--white-color);
@@ -134,7 +135,7 @@ ol li {
     background: #ffbc88;
     filter: blur(14px);
     transform: translate(-50%, 0);
-    top: -5px;
+    top: 10px;
     left: 50%;
     z-index: -1;
   }
@@ -152,7 +153,7 @@ ol li {
   }
   &:hover,
   &:focus {
-    background: linear-gradient(180.4deg, #f9a25e 0.34%, #f5754d 76.43%, #f55c2c 99.05%);
+    background: linear-gradient(180.4deg, #ffd260 0.34%, #f29642 76.43%, #f5723a 99.05%);
   }
 }
 
