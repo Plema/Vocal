@@ -13,17 +13,18 @@
         content: '';
         position: absolute;
         background: linear-gradient(95.78deg, #aee0ff 16.73%, #fbe2fb 57.82%, #dad6ff 100.66%);
-        filter: blur(40px);
+        filter: blur(37px);
         transform: rotate(-50.78deg);
-        width: 243px;
-        height: 260px;
+        width: 223px;
+        height: 220px;
         z-index: 2;
-        bottom: -100px;
+        bottom: -113px;
+        left: 21%;
       }
       img {
         width: 80%;
         max-width: 460px;
-        height: 80%;
+        // height: 80%;
         position: relative;
         z-index: 1;
       }
@@ -63,7 +64,7 @@
           font-style: normal;
           font-weight: normal;
           font-size: 16px;
-          line-height: 24px;
+          line-height: 18px;
           position: relative;
           &:not(:last-child) {
             margin-bottom: 15px;
@@ -356,6 +357,20 @@
   }
   @media (min-width: 768px) {
     .about-author {
+      .photo-wrapper {
+        &::after {
+          content: '';
+          position: absolute;
+          background: linear-gradient(95.78deg, #aee0ff 16.73%, #fbe2fb 57.82%, #dad6ff 100.66%);
+          filter: blur(37px);
+          transform: rotate(-50.78deg);
+          width: 243px;
+          height: 262px;
+          z-index: 2;
+          bottom: -113px;
+          left: 21%;
+        }
+      }
       .description-list {
         display: flex;
         flex-wrap: wrap;
@@ -387,10 +402,11 @@
       .photo-wrapper {
         width: 50%;
         &::after {
-          width: 430px;
-          height: 461px;
-          filter: blur(76px);
-          bottom: -76px;
+          width: 380px;
+          height: 411px;
+          filter: blur(69px);
+          bottom: -180px;
+          left: 16%;
         }
         &::before {
           content: '';
@@ -416,8 +432,8 @@
         &::before {
           content: '';
           position: absolute;
-          width: 18px;
-          height: 21px;
+          width: 23px;
+          height: 26px;
           background-image: url(../img/music-note__2.png);
           background-repeat: no-repeat;
           background-size: contain;
@@ -449,7 +465,10 @@
           &__item {
             width: 100%;
             font-size: 18px;
-            line-height: 28px;
+            line-height: 24px;
+            &::before {
+              top: 4px;
+            }
           }
         }
       }
@@ -555,9 +574,16 @@
           max-width: 610px;
           margin-bottom: 17px;
           align-items: center;
+          transition: all 0.7s;
+          &:hover {
+            transform: scale(1.05);
+          }
           .item-img {
             width: 58px;
             height: 58px;
+            display: flex;
+            justify-content: center;
+            margin-right: 25px;
           }
           .result-text {
             font-size: 18px;
@@ -625,7 +651,7 @@
       &::before {
         content: '';
         position: absolute;
-        z-index: 1;
+        z-index: -1;
         width: 775px;
         height: 759px;
         background: linear-gradient(95.78deg, #aee0ff 16.73%, #fbe2fb 57.82%, #dad6ff 100.66%);
