@@ -157,7 +157,7 @@
     }
   }
   @media (min-width: 1024px) {
-    padding: 50px 0 104px;
+    padding: 50px 0 134px;
     .container {
       flex-direction: row;
     }
@@ -178,6 +178,7 @@
         }
         .main-subtitle {
           max-width: 410px;
+          line-height: 27px;
         }
       }
     }
