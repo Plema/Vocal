@@ -40,7 +40,6 @@
   .nav-footer {
     width: 45%;
     &-list {
-      padding-left: 20px;
       &__item {
         margin-bottom: 10px;
         &:last-child {
@@ -54,27 +53,6 @@
           color: var(--white-color);
           transition: all 0.7s;
           position: relative;
-          &::before,
-          &::after {
-            content: '';
-            position: absolute;
-            width: 0px;
-            height: 1px;
-            background-color: var(--white-color);
-            transform: translate(-50%, -50%);
-            top: 50%;
-            transition: all 0.7s;
-          }
-          &.active {
-            &::before {
-              width: 20px;
-              left: -16px;
-            }
-            &::after {
-              width: 20px;
-              right: -34px;
-            }
-          }
         }
       }
     }
@@ -183,6 +161,36 @@
         &__item {
           margin-bottom: 0px;
           margin: 0 15px;
+          .nav-footer__link {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 22px;
+            color: var(--white-color);
+            transition: all 0.7s;
+            position: relative;
+            &::before,
+            &::after {
+              content: '';
+              position: absolute;
+              width: 0px;
+              height: 1px;
+              background-color: var(--white-color);
+              transform: translate(-50%, -50%);
+              top: 50%;
+              transition: all 0.7s;
+            }
+            &.active {
+              &::before {
+                width: 20px;
+                left: -16px;
+              }
+              &::after {
+                width: 20px;
+                right: -34px;
+              }
+            }
+          }
         }
       }
     }
