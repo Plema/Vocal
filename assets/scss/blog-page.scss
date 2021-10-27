@@ -1,0 +1,96 @@
+.blog-page {
+  position: relative;
+  .title-wrapper {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    padding: 50px 0 60px;
+    .title {
+      font-family: 'Proxima Nova Th';
+      font-size: 36px;
+      line-height: 40px;
+      text-transform: uppercase;
+      color: var(--white-color);
+    }
+  }
+  .blog-page-content {
+    padding: 32px 0;
+    .route-wrapper {
+      margin-bottom: 24px;
+      .route-link {
+        display: inline;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 18px;
+        transition: all 0.7s;
+        &__current {
+          //   font-weight: 600;
+          color: #a557d8;
+          text-decoration: underline;
+        }
+        &:hover {
+          color: #a557d8;
+        }
+      }
+    }
+    .label-wrapper {
+      margin-bottom: 24px;
+      .label {
+        width: 134px;
+        height: 32px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50px;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 17px;
+        color: #ffffff;
+        &__first {
+          background: #6885ef;
+        }
+      }
+    }
+    .content-wrapper {
+      .content-title {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 29px;
+        text-transform: uppercase;
+      }
+    }
+  }
+  @media (min-width: 768px) {
+    .title-wrapper {
+      padding: 0;
+      height: 25vh;
+      padding-top: 70px;
+      text-align: center;
+      .title {
+        font-family: 'Proxima Nova Lt';
+        font-size: 48px;
+        line-height: 58px;
+        text-transform: capitalize;
+      }
+    }
+  }
+  @media (min-width: 1024px) {
+    .title-wrapper {
+      height: 28vh;
+      padding-top: 70px;
+    }
+  }
+  @media (min-width: 1024px) and (min-height: 700px) {
+    .title-wrapper {
+      padding-top: 70px;
+    }
+  }
+  @media (min-width: 1024px) and (min-height: 780px) {
+    .title-wrapper {
+      padding-top: 120px;
+    }
+  }
+}
