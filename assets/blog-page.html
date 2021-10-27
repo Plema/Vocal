@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <link rel="icon" href="img/retro-microphone.png" type="image/x-icon" />
+    <link rel="stylesheet" href="css/style.min.css" data-inprogress="" />
+    <link rel="stylesheet" href="css/blog-page.min.css" data-inprogress="" />
+    <title>Блог внутренняя</title>
+    <style>
+      @media (max-width: 767px) {
+        .title-wrapper {
+          background-image: url(img/contacts-bg__mob.png);
+          background-position-x: center;
+          background-position-y: top;
+          background-size: cover;
+          background-repeat: no-repeat;
+        }
+      }
+      @media (min-width: 768px) {
+        .title-wrapper {
+          background-image: url(img/contacts-bg__decktop.png);
+          background-position-x: center;
+          background-position-y: center;
+          background-repeat: no-repeat;
+        }
+      }
+      @media (min-width: 1024px) {
+        .title-wrapper {
+          background-position-y: top;
+        }
+      }
+      @media (min-width: 1920px) {
+        .title-wrapper {
+          background-size: cover;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <include src="assets/templates/header.html"></include>
+      <main class="main">
+        <section class="blog-page">
+          <div class="title-wrapper">
+            <div class="container">
+              <h1 class="title">Блог</h1>
+            </div>
+          </div>
+          <div class="blog-page-content">
+            <div class="container">
+              <div class="route-wrapper">
+                <a class="route-link" href="index.html">Главная /</a>
+                <a class="route-link" href="blog.html">Блог /</a>
+                <p class="route-link route-link__current">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне</p>
+              </div>
+              <div class="label-wrapper">
+                <a href="javascript:void(0)" class="label label__first">Lorem Ipsum</a>
+              </div>
+              <div class="content-wrapper">
+                <h2 class="content-title">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.</h2>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <include src="assets/templates/footer.html"></include>
+    </div>
+  </body>
+</html>
