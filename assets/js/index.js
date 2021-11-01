@@ -18,4 +18,30 @@ $(document).ready(function () {
     $('.nav-footer__link').removeClass('active')
     $(this).toggleClass('active')
   })
+
+  $('.tabs-triggers .tabs-triggers__item-all').on('click', function () {
+    $('.blog-list .blog-list__item').removeClass('active')
+    $('.tabs-triggers__item').removeClass('active')
+    $(this).toggleClass('active')
+    $('.blog-list .blog-list__item').addClass('active')
+  })
+
+  $('.tabs-triggers .tabs-triggers__item-1').on('click', function (e) {
+    e.preventDefault()
+    $('.blog-list .blog-list__item').removeClass('active')
+    $('.tabs-triggers__item').removeClass('active')
+    $(this).toggleClass('active')
+    $('.blog-list .label-1').addClass('active')
+  })
+
+  // $('.tabs-triggers .tabs-triggers__item').on('click', function (e) {
+  //   e.preventDefault()
+
+  //   $('.tabs-triggers__item-all').removeClass('active')
+  //   $('.tabs-triggers__item').removeClass('active')
+  //   $('.blog-list__item').removeClass('active')
+
+  //   $(this).addClass('active')
+  //   $($(this).attr('href')).addClass('active')
+  // })
 })
