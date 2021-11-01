@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <link rel="icon" href="img/retro-microphone.png" type="image/x-icon" />
+    <link rel="stylesheet" href="css/style.min.css" data-inprogress="" />
+    <link rel="stylesheet" href="css/course-page.min.css" data-inprogress="" />
+    <title>Курсы внутренняя</title>
+    <style>
+      .banner-wrapper {
+        background-image: url(img/course-banner__bg.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100%;
+      }
+      @media (min-width: 480px) {
+        .banner-wrapper {
+          background-image: url(img/course-banner__bg-decktop-1.png);
+        }
+      }
+      @media (min-width: 768px) {
+        .banner-wrapper {
+          background-position-x: center;
+          height: 100vh;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <include src="assets/templates/header.html"></include>
+      <main class="main">
+        <section class="banner-wrapper">
+          <div class="container">
+            <div class="inner-wrapper">
+              <div class="title-wrapper">
+                <p class="course-mark">Видео курс</p>
+                <h1 class="main-title">«Новичок. Голос. Слух. Ритм»</h1>
+                <p class="main-subtitle">Для начинающих вокалистов, любителей пения, всех кто хочет научиться красиво петь, но не знает с чего начать.</p>
+                <a href="#courses" class="button anchor">Купить</a>
+              </div>
+            </div>
+            <div class="content-wrapper">
+              <div class="video-wrapper">
+                <img src="img/video__img.png" alt="" />
+                <!-- <iframe width="350" height="200" src="https://www.youtube.com/embed/FeRO2x-FXzc" frameborder="0" allowfullscreen></iframe> -->
+                <div class="play-wrapper">
+                  <a href="javascript:void(0)"><img src="img/youtube-img.png" alt="" /></a>
+                </div>
+              </div>
+              <div class="description-wrapper">
+                <p class="description-text"><span class="description-text__span">«Настройте свой природный голос и начните попадать в ноты и ритм»</span> Занимаясь по 20-30 минут в день.</p>
+              </div>
+            </div>
+            <a href="#about" class="anchor-wrapper anchor">
+              <p>Scroll</p>
+            </a>
+          </div>
+        </section>
+        <section class="about-course" id="about">
+          <div class="container"></div>
+        </section>
+      </main>
+      <include src="assets/templates/footer.html"></include>
+    </div>
+
+    <!-- script -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/jquery.matchHeight.min.js"></script>
+    <script src="js/jquery.mask.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/accordion.min.js"></script>
+
+    <script src="js/header-burger.min.js"></script>
+    <script src="js/slider-reviews.min.js"></script>
+    <script src="js/home.min.js"></script>
+    <script src="js/index.min.js"></script>
+  </body>
+</html>
