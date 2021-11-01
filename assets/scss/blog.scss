@@ -5,6 +5,8 @@
     width: 100%;
     height: 100%;
     padding: 50px 0 110px;
+    position: relative;
+    z-index: 2;
     .title {
       font-family: 'Proxima Nova Th';
       font-size: 36px;
@@ -13,10 +15,228 @@
       color: var(--white-color);
     }
   }
+  .blog-tabs {
+    padding-top: 25px;
+    margin-bottom: 28px;
+    .tabs-triggers {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      .tabs-triggers__item-all {
+        border-radius: 50px;
+        height: 32px;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 19px;
+        color: #ffffff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        z-index: 2;
+        margin-bottom: 20px;
+        height: 36px;
+        background: #f67e50;
+        position: relative;
+        z-index: 2;
+        width: 100%;
+        &::after {
+          content: '';
+          position: absolute;
+          transform: translate(-50%, 0);
+          left: 50%;
+          bottom: -8px;
+          width: 80%;
+          height: 16px;
+          background: #f67e50;
+          filter: blur(20px);
+          z-index: -1;
+          opacity: 0;
+          transition: all 0.7s;
+        }
+        &:hover::after {
+          opacity: 1;
+        }
+        &.active::after {
+          // content: '';
+          // position: absolute;
+          // transform: translate(-50%, 0);
+          // left: 50%;
+          // bottom: -8px;
+          // width: 80%;
+          // height: 16px;
+          // background: #f67e50;
+          // filter: blur(20px);
+          // z-index: -1;
+          opacity: 1;
+        }
+      }
+      .tabs-triggers__item {
+        border-radius: 50px;
+        height: 32px;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 19px;
+        color: #ffffff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        z-index: 2;
+        margin-bottom: 20px;
+        &-all {
+          height: 36px;
+          background: #f67e50;
+          position: relative;
+          z-index: 2;
+          width: 100%;
+          &::after {
+            content: '';
+            position: absolute;
+            transform: translate(-50%, 0);
+            left: 50%;
+            bottom: -8px;
+            width: 80%;
+            height: 16px;
+            background: #f67e50;
+            filter: blur(20px);
+            z-index: -1;
+            opacity: 0;
+            transition: all 0.7s;
+          }
+          &:hover::after {
+            opacity: 1;
+          }
+          &.active::after {
+            // content: '';
+            // position: absolute;
+            // transform: translate(-50%, 0);
+            // left: 50%;
+            // bottom: -8px;
+            // width: 80%;
+            // height: 16px;
+            // background: #f67e50;
+            // filter: blur(20px);
+            // z-index: -1;
+            opacity: 1;
+          }
+        }
+        &-1 {
+          background: #6885ef;
+          width: 46%;
+          position: relative;
+          z-index: 2;
+          &.active::after {
+            content: '';
+            position: absolute;
+            transform: translate(-50%, 0);
+            left: 50%;
+            bottom: -8px;
+            width: 80%;
+            height: 16px;
+            background: #6885ef;
+            filter: blur(20px);
+            z-index: -1;
+          }
+        }
+        &-2 {
+          background: #7f70ec;
+          width: 46%;
+          position: relative;
+          z-index: 2;
+          &.active::after {
+            content: '';
+            position: absolute;
+            transform: translate(-50%, 0);
+            left: 50%;
+            bottom: -8px;
+            width: 80%;
+            height: 16px;
+            background: #7f70ec;
+            filter: blur(20px);
+            z-index: -1;
+          }
+        }
+        &-3 {
+          background: #b54dc9;
+          width: 46%;
+          position: relative;
+          z-index: 2;
+          &.active::after {
+            content: '';
+            position: absolute;
+            transform: translate(-50%, 0);
+            left: 50%;
+            bottom: -8px;
+            width: 80%;
+            height: 16px;
+            background: #b54dc9;
+            filter: blur(20px);
+            z-index: -1;
+          }
+        }
+        &-4 {
+          background: #d150b4;
+          width: 46%;
+          position: relative;
+          z-index: 2;
+          &.active::after {
+            content: '';
+            position: absolute;
+            transform: translate(-50%, 0);
+            left: 50%;
+            bottom: -8px;
+            width: 80%;
+            height: 16px;
+            background: #d150b4;
+            filter: blur(20px);
+            z-index: -1;
+          }
+        }
+        &-5 {
+          background: #a359e5;
+          width: 46%;
+          position: relative;
+          z-index: 2;
+          &.active::after {
+            content: '';
+            position: absolute;
+            transform: translate(-50%, 0);
+            left: 50%;
+            bottom: -8px;
+            width: 80%;
+            height: 16px;
+            background: #a359e5;
+            filter: blur(20px);
+            z-index: -1;
+          }
+        }
+        &-6 {
+          background: #9533ec;
+          width: 46%;
+          position: relative;
+          z-index: 2;
+          &.active::after {
+            content: '';
+            position: absolute;
+            transform: translate(-50%, 0);
+            left: 50%;
+            bottom: -8px;
+            width: 80%;
+            height: 16px;
+            background: #9533ec;
+            filter: blur(20px);
+            z-index: -1;
+          }
+        }
+      }
+    }
+  }
   .blog-content {
     .content-inner {
-      padding-bottom: 44px;
-      margin-top: -50px;
+      padding: 0 0 44px;
       .blog-list {
         margin-bottom: 37px;
         &__item {
@@ -29,6 +249,10 @@
           margin-bottom: 20px;
           transition: all 0.8s;
           cursor: pointer;
+          display: none;
+          &.active {
+            display: block;
+          }
           .card-link {
             width: 100%;
             height: 100%;
@@ -99,7 +323,6 @@
     }
     .blog-content {
       .content-inner {
-        margin-top: -100px;
         .blog-list {
           display: flex;
           flex-wrap: wrap;
@@ -140,7 +363,6 @@
     }
     .blog-content {
       .content-inner {
-        margin-top: -120px;
         .blog-list {
           &__item {
             width: 32%;
