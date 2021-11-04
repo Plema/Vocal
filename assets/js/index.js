@@ -69,19 +69,19 @@ $(document).ready(function () {
     $('.blog-list .label-6').addClass('active')
   })
 
-  $('.close-btn').on('click', function () {
-    $('.modall').removeClass('active-modall')
+  $('.close').on('click', function () {
+    $('.modall').removeClass('active')
   })
 
-  jQuery(function ($) {
-    $(document).mouseup(function (e) {
-      var div = $('.modall-body')
-      if (!div.is(e.target) && div.has(e.target).length === 0) {
-        div.removeClass('active ')
-        $('.modall').removeClass('active ')
-      }
-    })
-  })
+  // jQuery(function ($) {
+  //   $(document).mouseup(function (e) {
+  //     var div = $('.modall-body')
+  //     if (!div.is(e.target) && div.has(e.target).length === 0) {
+  //       div.removeClass('active ')
+  //       $('.modall').removeClass('active ')
+  //     }
+  //   })
+  // })
 
   $('.communication-btn').on('click', function () {
     $('.modall').removeClass('active')

@@ -1104,6 +1104,7 @@
           width: 100%;
           border-radius: 10px;
           position: relative;
+          z-index: 2;
           img {
             border-radius: 10px;
             width: 100%;
@@ -1231,6 +1232,19 @@
     .education-wrapper {
       padding: 0 0 73px;
       margin-top: 30px;
+      position: relative;
+      z-index: 2;
+      &::after {
+        content: '';
+        position: absolute;
+        width: 775px;
+        height: 759px;
+        background: linear-gradient(95.78deg, #aee0ff 16.73%, #fbe2fb 57.82%, #dad6ff 100.66%);
+        filter: blur(85px);
+        transform: rotate(-122.58deg);
+        right: -25%;
+        bottom: 0%;
+      }
       .education {
         padding-top: 61px;
         &-title {
