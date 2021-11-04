@@ -69,6 +69,24 @@ $(document).ready(function () {
     $('.blog-list .label-6').addClass('active')
   })
 
+  $('.close-btn').on('click', function () {
+    $('.modall').removeClass('active-modall')
+  })
+
+  jQuery(function ($) {
+    $(document).mouseup(function (e) {
+      var div = $('.modall-body')
+      if (!div.is(e.target) && div.has(e.target).length === 0) {
+        div.removeClass('active ')
+        $('.modall').removeClass('active ')
+      }
+    })
+  })
+
+  $('.communication-btn').on('click', function () {
+    $('.modall').removeClass('active')
+    $('.modall-communication').addClass('active')
+  })
   // $('.tabs-triggers .tabs-triggers__item').on('click', function (e) {
   //   e.preventDefault()
 
@@ -79,4 +97,7 @@ $(document).ready(function () {
   //   $(this).addClass('active')
   //   $($(this).attr('href')).addClass('active')
   // })
+  $(function () {
+    $('*[placeholder="Ваше телефон"]*').mask('+0 (000) 000 00 00')
+  })
 })
