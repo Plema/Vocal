@@ -18,6 +18,9 @@
       .about-description {
         background: linear-gradient(126.75deg, #9e32d7 51.43%, #e25aa8 94.05%);
       }
+      .about-author__wrapper {
+        background: linear-gradient(126.75deg, #9e32d7 51.43%, #e25aa8 94.05%);
+      }
       @media (min-width: 480px) {
         .banner-wrapper {
           background-image: url(img/course-banner__bg-decktop-1.png);
@@ -39,10 +42,34 @@
           position: relative;
           z-index: 2;
         }
+        .about-description {
+          background-image: url(img/about-description__bg.png);
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position-x: center;
+        }
+        .reviews-wrapper {
+          background-image: url(img/about-reviews-wrapper.png);
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position-x: center;
+        }
+        .education {
+          background-image: url(img/vocals-title.png);
+          background-repeat: no-repeat;
+          background-size: contain;
+          background-position-x: center;
+        }
+        .about-author__wrapper {
+          background-image: url(img/about-author__bg.png);
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position-x: center;
+        }
       }
     </style>
   </head>
-  <body>
+  <body class="body">
     <div class="wrapper">
       <header class="header">
   <div class="header__mob">
@@ -96,6 +123,21 @@
   </div>
 </header>
 
+      <!-- communication-btn - этот класс повесить на кнопку для вызова модалки -->
+
+<div class="modall modall-communication">
+  <div class="close-btn"></div>
+  <div class="content">
+    <h2>Укажите свои данные, наш менеджер свяжеться с вами</h2>
+    <div class="forma-wrapper">
+      <input class="input" type="text" id="name" name="name" placeholder="Ваше имя" autocomplete="off" required="" minlength="2">
+      <input class="input" type="tel" placeholder="Ваше телефон" id="tel" name="tel" autocomplete="off" required="">
+      <input class="input" type="email" placeholder="Ваш e-mail" id="email" name="email" autocomplete="off" required="">
+    </div>
+    <button type="submit" href="javascript:void(0)" class="button">Отправить</button>
+  </div>
+</div>
+
       <main class="main">
         <section class="banner-wrapper">
           <div class="container">
@@ -104,7 +146,7 @@
                 <p class="course-mark">Видео курс</p>
                 <h1 class="main-title">«Новичок. Голос. Слух. Ритм»</h1>
                 <p class="main-subtitle">Для начинающих вокалистов, любителей пения, всех кто хочет научиться красиво петь, но не знает с чего начать.</p>
-                <a href="#courses" class="button anchor">Купить</a>
+                <a href="#courses" class="button communication-btn">Купить</a>
               </div>
             </div>
             <div class="content-wrapper">
@@ -402,37 +444,379 @@
                 </div>
               </div>
               <ul class="list">
-                <li class="list-item">
-                  <div class="number-wrapper">
+                <li class="list-item" data-mh="my-group10">
+                  <div class="number-wrapper" data-mh="my-group12">
                     <p>79</p>
                   </div>
-                  <p>обучающих видео</p>
+                  <p data-mh="my-group11">обучающих видео</p>
                 </li>
-                <li class="list-item">
-                  <div class="number-wrapper">
+                <li class="list-item" data-mh="my-group10">
+                  <div class="number-wrapper" data-mh="my-group12">
                     <p>7,5</p>
                   </div>
-                  <p>часов полезного контента</p>
+                  <p data-mh="my-group11">часов полезного контента</p>
                 </li>
-                <li class="list-item">
-                  <div class="number-wrapper">
+                <li class="list-item" data-mh="my-group10">
+                  <div class="number-wrapper" data-mh="my-group12">
                     <p>15</p>
                   </div>
-                  <p>распевок</p>
+                  <p data-mh="my-group11">распевок</p>
                 </li>
-                <li class="list-item">
-                  <div class="number-wrapper">
+                <li class="list-item" data-mh="my-group10">
+                  <div class="number-wrapper" data-mh="my-group12">
                     <p>14</p>
                   </div>
-                  <p>упражнение на дыхание</p>
+                  <p data-mh="my-group11">упражнение на дыхание</p>
                 </li>
-                <li class="list-item">
-                  <div class="number-wrapper">
+                <li class="list-item" data-mh="my-group10">
+                  <div class="number-wrapper" data-mh="my-group12">
                     <p>15</p>
                   </div>
-                  <p>упражнений для постановки голоса</p>
+                  <p data-mh="my-group11">упражнений для постановки голоса</p>
                 </li>
               </ul>
+              <div class="description-bottom__wrapper">
+                <div class="description-bottom" data-mh="my-group13">
+                  <p class="description-bottom__text">
+                    <span>Обратная связь</span> по упражнениям доступна всем студентам. Вы можете присылать пример выполнения упражнения голосовым сообщением и получать рекомендации по его выполнению.
+                  </p>
+                </div>
+                <div class="description-bottom" data-mh="my-group13">
+                  <p class="description-bottom__text">
+                    <span>Вокальный клуб</span> – это закрытый аккаунт в Инстаграм с полезной информацией по вокалу и голосу. Вы сможете общаться с единомышленниками, задавать вопросы, участвовать в
+                    прямых эфирах и полностью погрузиться в мир музыки.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="about-result">
+          <div class="result-wrapper">
+            <div class="container">
+              <div class="result">
+                <h2 class="result-title">Результаты после прохождения курса</h2>
+                <div class="result-inner">
+                  <div class="list-wrapper">
+                    <h4 class="list-title">Дыхание и Голос</h4>
+                    <ul class="list">
+                      <li class="list-item">Научитесь правильно дышать во время пения</li>
+                      <li class="list-item">Научитесь петь на опоре</li>
+                      <li class="list-item">Избавитесь от зажимов</li>
+                      <li class="list-item">Возродите и настроите природный голос</li>
+                      <li class="list-item">Научитесь контролировать свой голос</li>
+                      <li class="list-item">Сможете управлять звуком</li>
+                      <li class="list-item">Сделаете голос красивым сильным и уверенным</li>
+                    </ul>
+                  </div>
+                  <div class="list-wrapper">
+                    <h4 class="list-title">Слух и ритм</h4>
+                    <ul class="list">
+                      <li class="list-item">Разовьете музыкальный слух</li>
+                      <li class="list-item">Начнете попадать в ноты</li>
+                      <li class="list-item">Улучшите чувство ритма</li>
+                      <li class="list-item">Отработаете навыки на практике</li>
+                    </ul>
+                  </div>
+                  <div class="list-wrapper">
+                    <h4 class="list-title">Песни</h4>
+                    <ul class="list">
+                      <li class="list-item">Научитесь петь простые песни</li>
+                      <li class="list-item">Сможете разбирать песни по схеме</li>
+                      <li class="list-item">Улучшите чувство ритма</li>
+                      <li class="list-item">Поймете, как подбирать песни под свой уровень</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="reviews-wrapper" id="reviews">
+            <div class="container">
+              <div class="reviews">
+                <h2 class="reviews-title">Посмотрите на реальные <span>ОТЗЫВЫ</span> студентов</h2>
+                <p class="reviews-subtitle">Уже сейчас этот курс проходят 342 студента со всех уголков мира.</p>
+                <div class="slider-reviews">
+                  <div class="slider-item">
+                    <div class="review-avatar">
+                      <img src="img/icon-avatar.svg" alt="icon-avatar" class="icon-avatar">
+                    </div>
+                    <div class="review-description">
+                      <div class="review-description__title">
+                        <p class="name">Елена</p>
+                        <p class="data">25 янв. 2021 г.</p>
+                      </div>
+                      <div class="review-description__rating">
+                        <img src="img/icon-star.svg" alt="icon-star" class="rating-star">
+                        <img src="img/icon-star.svg" alt="icon-star" class="rating-star">
+                        <img src="img/icon-star.svg" alt="icon-star" class="rating-star">
+                        <img src="img/icon-star.svg" alt="icon-star" class="rating-star">
+                        <img src="img/icon-star.svg" alt="icon-star" class="rating-star">
+                      </div>
+                      <div class="review-description__text">
+                        <p>Отличный преподаватель, всё четко расписано и систематизировано. С удовольствием прохожу эти курсы.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="slider-item">
+                    <div class="review-avatar">
+                      <img src="img/icon-avatar.svg" alt="icon-avatar" class="icon-avatar">
+                    </div>
+                    <div class="review-description">
+                      <div class="review-description__title">
+                        <p class="name">Анастасия</p>
+                        <p class="data">25 янв. 2021 г.</p>
+                      </div>
+                      <div class="review-description__rating">
+                        <img src="img/icon-star.svg" alt="icon-star" class="rating-star">
+                        <img src="img/icon-star.svg" alt="icon-star" class="rating-star">
+                        <img src="img/icon-star.svg" alt="icon-star" class="rating-star">
+                        <img src="img/icon-star.svg" alt="icon-star" class="rating-star">
+                        <img src="img/icon-star.svg" alt="icon-star" class="rating-star">
+                      </div>
+                      <div class="review-description__text">
+                        <p>Отличный преподаватель, всё четко расписано и систематизировано. С удовольствием прохожу эти курсы.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="slider-item">
+                    <div class="review-avatar">
+                      <img src="img/icon-avatar.svg" alt="icon-avatar" class="icon-avatar">
+                    </div>
+                    <div class="review-description">
+                      <div class="review-description__title">
+                        <p class="name">Катарина</p>
+                        <p class="data">25 янв. 2021 г.</p>
+                      </div>
+                      <div class="review-description__rating">
+                        <img src="img/icon-star.svg" alt="icon-star" class="rating-star">
+                        <img src="img/icon-star.svg" alt="icon-star" class="rating-star">
+                        <img src="img/icon-star.svg" alt="icon-star" class="rating-star">
+                        <img src="img/icon-star.svg" alt="icon-star" class="rating-star">
+                        <img src="img/icon-star.svg" alt="icon-star" class="rating-star">
+                      </div>
+                      <div class="review-description__text">
+                        <p>Отличный преподаватель, всё четко расписано и систематизировано. С удовольствием прохожу эти курсы.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="slider-item">
+                    <div class="review-avatar">
+                      <img src="img/icon-avatar.svg" alt="icon-avatar" class="icon-avatar">
+                    </div>
+                    <div class="review-description">
+                      <div class="review-description__title">
+                        <p class="name">Анна</p>
+                        <p class="data">25 янв. 2021 г.</p>
+                      </div>
+                      <div class="review-description__rating">
+                        <img src="img/icon-star.svg" alt="icon-star" class="rating-star">
+                        <img src="img/icon-star.svg" alt="icon-star" class="rating-star">
+                        <img src="img/icon-star.svg" alt="icon-star" class="rating-star">
+                        <img src="img/icon-star.svg" alt="icon-star" class="rating-star">
+                        <img src="img/icon-star.svg" alt="icon-star" class="rating-star">
+                      </div>
+                      <div class="review-description__text">
+                        <p>Отличный преподаватель, всё четко расписано и систематизировано. С удовольствием прохожу эти курсы.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <a href="#courses" class="button button__begin anchor">Начать заниматься</a>
+              </div>
+            </div>
+          </div>
+          <div class="education-wrapper">
+            <div class="container">
+              <div class="education">
+                <h2 class="education-title">Как проходит обучение</h2>
+                <div class="education-inner">
+                  <div class="list-wrapper">
+                    <div class="education-list">
+                      <h4 class="education-list__title">Как начать обучение:</h4>
+                      <ul class="list">
+                        <li class="list-item">
+                          <p class="list-item__number">1.</p>
+                          <p class="list-item__text">Нажимайте на кнопку купить, вы перейдете на страницу оплаты. Важно указать действительный имеил и придумать, запомнить пароль.</p>
+                        </li>
+                        <li class="list-item">
+                          <p class="list-item__number">2.</p>
+                          <p class="list-item__text">Оплачиваете курс удобным способом.</p>
+                        </li>
+                        <li class="list-item">
+                          <p class="list-item__number">3.</p>
+                          <p class="list-item__text">
+                            Сразу после оплаты все материалы курса будут доступны в личном кабинете. Для входа в кабинет используйте логин (ваш имейл) и пароль, который вы придумали при регистрации.
+                          </p>
+                        </li>
+                        <li class="list-item">
+                          <p class="list-item__number">4.</p>
+                          <p class="list-item__text">В первой части курса вы получите все инструкции и необходимые рекомендации по организации занятий.</p>
+                        </li>
+                        <li class="list-item">
+                          <p class="list-item__number">5.</p>
+                          <p class="list-item__text">Доступ к курсу останется у вас НАВСЕГДА.</p>
+                        </li>
+                        <li class="list-item">
+                          <p class="list-item__number">6.</p>
+                          <p class="list-item__text">Обратную связь по упражнениям вы сможете получить в закрытом аккаунте в инстаграм.</p>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="education-list">
+                      <h4 class="education-list__title">Как проходит обучение:</h4>
+                      <ul class="list">
+                        <li class="list-item">
+                          <p class="list-item__number">1.</p>
+                          <p class="list-item__text">Вы смотрите видео уроки в личном кабинете.</p>
+                        </li>
+                        <li class="list-item">
+                          <p class="list-item__number">2.</p>
+                          <p class="list-item__text">Выполняете упражнения.</p>
+                        </li>
+                        <li class="list-item">
+                          <p class="list-item__number">3.</p>
+                          <p class="list-item__text">Вы можете заниматься дома, в офисе или в машине со смартфона, планшета или ноутбука/компьютера.</p>
+                        </li>
+                        <li class="list-item">
+                          <p class="list-item__number">4.</p>
+                          <p class="list-item__text">В любой момент вы можете задавать вопросы автору курса.</p>
+                        </li>
+                        <li class="list-item">
+                          <p class="list-item__number">5.</p>
+                          <p class="list-item__text">Вы можете отправлять аудио или видеоотчет (по желанию) преподавателю с примером выполнения упражнения.</p>
+                        </li>
+                        <li class="list-item">
+                          <p class="list-item__number">6.</p>
+                          <p class="list-item__text">Получаете обратную связь и личные рекомендации.</p>
+                        </li>
+                        <li class="list-item">
+                          <p class="list-item__number">7.</p>
+                          <p class="list-item__text">И через 3 недели интенсивных занятий Вы будете радоваться новому звучанию своего голоса!</p>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="right-side">
+                    <div class="video-wrapper">
+                      <img src="img/course-video__bg.png" alt="blog-video__img">
+                      <div class="play-wrapper">
+                        <a href="javascript:void(0)"><img src="img/youtube-img.png" alt=""></a>
+                      </div>
+                    </div>
+                    <a href="javascript:void(0)" class="button">Начать 1 урок бесплатно</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="about-author">
+          <div class="about-author__wrapper">
+            <div class="container">
+              <div class="about-author__inner">
+                <div class="about-author__top">
+                  <div class="img-wrapper">
+                    <img src="img/about-author__img.png" alt="about-author__img">
+                  </div>
+                  <div class="text-wrapper">
+                    <h3 class="title">Об авторе курса</h3>
+                    <p class="subtitle">Анна Комлевская – педагог по вокалу и автор уникальной программы по эффективной постановке и развитию голоса. Автор более 7 видео курсов по вокалу.</p>
+                    <p class="quotes">«Не бывает бездарных учеников, бывают ленивые педагоги»</p>
+                    <ul class="list">
+                      <li class="list-item">
+                        <img src="img/icon-checked__orange.png" alt="">
+                        <p>13 лет профессионально занимается музыкой и преподает вокал.</p>
+                      </li>
+                      <li class="list-item">
+                        <img src="img/icon-checked__orange.png" alt="">
+                        <p>Автор более 7 видео курсов по вокалу.</p>
+                      </li>
+                      <li class="list-item">
+                        <img src="img/icon-checked__orange.png" alt="">
+                        <p>Кандидат педагогических наук и автор уникальной программы по развитию голоса.</p>
+                      </li>
+                      <li class="list-item">
+                        <img src="img/icon-checked__orange.png" alt="">
+                        <p>Автор канала на YouTube “Уроки вокала Анны Комлевской” 72k+ подписчиков.</p>
+                      </li>
+                      <li class="list-item">
+                        <img src="img/icon-checked__orange.png" alt="">
+                        <p>Вокальный продюсер шоу-спектакля «Замок забытых историй.</p>
+                      </li>
+                      <li class="list-item">
+                        <img src="img/icon-checked__orange.png" alt="">
+                        <p>Вокальный продюсер шоу-спектакля «Замок забытых историй. Легенда Ордена Золотого Грифона».</p>
+                      </li>
+                      <li class="list-item">
+                        <img src="img/icon-checked__orange.png" alt="">
+                        <p>Спикер музыкальной конференции Colisium.</p>
+                      </li>
+                      <li class="list-item">
+                        <img src="img/icon-checked__orange.png" alt="">
+                        <p>Автор песен, певица ESTER SINGER (студийный альбом и шоу-концерт), режиссер.</p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="about-author__bottom">
+                  <div class="img-wrapper">
+                    <img src="img/about-author__img-2.png" alt="about-author__img">
+                  </div>
+                  <div class="text-wrapper">
+                    <p class="text">
+                      Если вам надоело отсиживаться в караоке или петь мимо нот сгорая от стыда. Если вы устали от бесконечных попыток самостоятельно научиться петь по видео урокам из интернета без
+                      результата Если вы готовы регулярно заниматься и выполнять все рекомендации педагога
+                    </p>
+                    <p class="text-subscribe">Присоединяйтесь к курсу «Новичок. Голос.Слух.Ритм» и начните путь к красивому и сильному голосу!</p>
+                    <a href="javascript:void(0)" class="button">Первый урок бесплатно</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="other-courses">
+            <div class="other-courses-wrapper">
+              <div class="other-courses__item" data-mh="my-group20">
+                <div class="item-wrapper">
+                  <div class="item-inner">
+                    <img class="course-img" src="img/other-courses__img-1.png" alt="course-img" data-mh="my-group22">
+                    <p class="course-title" data-mh="my-group21">Высокие ноты легко</p>
+                    <p class="course-price">2290 руб.</p>
+                    <a href="javascript:void(0)" class="button">Подробнее</a>
+                  </div>
+                </div>
+              </div>
+              <div class="other-courses__item background__mob" data-mh="my-group20">
+                <div class="item-wrapper">
+                  <div class="item-inner">
+                    <img class="course-img" src="img/other-courses__img-2.png" alt="course-img" data-mh="my-group22">
+                    <p class="course-title" data-mh="my-group21">Эмоциональное пение</p>
+                    <p class="course-price">2290 руб.</p>
+                    <a href="javascript:void(0)" class="button">Подробнее</a>
+                  </div>
+                </div>
+              </div>
+              <div class="other-courses__item background__mob" data-mh="my-group20">
+                <div class="item-wrapper">
+                  <div class="item-inner">
+                    <img class="course-img" src="img/other-courses__img-3.png" alt="course-img" data-mh="my-group22">
+                    <p class="course-title" data-mh="my-group21">Возрождение природного голоса</p>
+                    <p class="course-price">2790 руб.</p>
+                    <a href="javascript:void(0)" class="button">Подробнее</a>
+                  </div>
+                </div>
+              </div>
+              <div class="other-courses__item background__mob" data-mh="my-group20">
+                <div class="item-wrapper">
+                  <div class="item-inner">
+                    <img class="course-img" src="img/other-courses__img-4.png" alt="course-img" data-mh="my-group22">
+                    <p class="course-title" data-mh="my-group21">Дыхание вокалиста</p>
+                    <p class="course-price">2290 руб.</p>
+                    <a href="javascript:void(0)" class="button">Подробнее</a>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </section>
