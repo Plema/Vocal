@@ -1608,7 +1608,7 @@
     .other-courses {
       width: 100%;
       max-width: 1280px;
-      padding: 0 20px 60px;
+      padding: 0 20px 80px;
       margin: 0 auto;
       &-wrapper {
         display: flex;
@@ -1618,6 +1618,24 @@
           max-width: 295px;
           .item-wrapper {
             padding: 0;
+            .item-inner {
+              padding: 29px 19px 0px;
+              .course-img {
+                height: 222px;
+              }
+              .course-title {
+                min-height: 40px;
+                display: flex;
+                justify-content: center;
+                margin: 0 auto 15px;
+              }
+              .course-price {
+                min-height: 20px;
+                display: flex;
+                justify-content: center;
+                margin: 0 auto 19px;
+              }
+            }
           }
         }
         .background__mob {
