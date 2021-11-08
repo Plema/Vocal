@@ -103,6 +103,6 @@ $(document).ready(function () {
   //   $($(this).attr('href')).addClass('active')
   // })
   $(function () {
-    $('*[placeholder="Ваше телефон"]*').mask('+0 (000) 000 00 00')
+    $('*[placeholder="Ваш телефон"]*').mask('+0 (000) 000 00 00')
   })
 })
