@@ -123,3 +123,17 @@
     }
   }
 }
+
+.modall-thx {
+  width: 90%;
+  max-width: 460px;
+  padding-bottom: 84px;
+  h2 {
+    margin-top: 52px;
+    text-align: center;
+  }
+  @media (min-width: 1024px) {
+    width: 90%;
+    max-width: 661px;
+  }
+}

@@ -87,6 +87,11 @@ $(document).ready(function () {
     $('.modall').removeClass('active')
     $('.modall-communication').addClass('active')
   })
+
+  $('.thx-btn').on('click', function () {
+    $('.modall').removeClass('active')
+    $('.modall-thx').addClass('active')
+  })
   // $('.tabs-triggers .tabs-triggers__item').on('click', function (e) {
   //   e.preventDefault()
 

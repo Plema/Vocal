@@ -300,10 +300,11 @@
       width: 50%;
       height: 100%;
       top: 20%;
-      right: -50%;
+      right: -70%;
       background-image: url(../img/courses-bg__after.png);
       background-repeat: no-repeat;
       background-size: contain;
+      z-index: 1;
     }
     .description-courses {
       padding: 125px 0 25px;
@@ -433,7 +434,7 @@
       width: 50%;
       height: 100%;
       top: 35%;
-      right: -45%;
+      right: -65%;
     }
     .description-courses {
       padding: 125px 0 25px;
@@ -523,7 +524,7 @@
       width: 50%;
       height: 100%;
       top: 35%;
-      right: -45%;
+      right: -65%;
     }
   }
   @media (min-width: 1600px) {
@@ -537,7 +538,7 @@
       width: 50%;
       height: 100%;
       top: 35%;
-      right: -45%;
+      right: -55%;
     }
   }
   @media (min-width: 1900px) {
