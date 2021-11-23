@@ -255,6 +255,7 @@
           .card-link {
             width: 100%;
             height: 100%;
+            width: fit-content;
           }
           .item-img {
             width: 100%;
@@ -274,13 +275,15 @@
               display: flex;
               align-items: center;
               justify-content: space-between;
+              margin-bottom: 5px;
             }
             .label-mark {
               display: flex;
               justify-content: center;
               align-items: center;
-              width: fit-content;
+              text-align: center;
               min-width: 88px;
+              width: fit-content;
               // height: 20px;
               padding: 3px 10px;
               font-style: normal;
@@ -312,7 +315,8 @@
               color: #959ab6;
               font-size: 14px;
               line-height: 21px;
-              margin-bottom: 4px;
+              width: fit-content;
+              margin-right: 20px;
             }
             .blog-link {
               font-weight: 600;
